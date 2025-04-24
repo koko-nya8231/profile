@@ -28,12 +28,15 @@
   <style>
     /* フェードインアップアニメーション */
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
-    .fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+    .fade-in-up {
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+    }
 
-    /* パステルグラデーション背景アニメーション（ブルー→グリーン→パープル） */
+    /* パステルグラデーション背景アニメーション */
     @keyframes gradientBG {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
